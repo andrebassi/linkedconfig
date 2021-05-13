@@ -1,0 +1,11 @@
+apiVersion: "linkedconfig.pbuilder.io/v1alpha1"
+kind: CustomConfigMap
+metadata:
+ name: configtest
+ namespace: default
+spec:
+  configMapName: testconfig
+  data:
+   application.properties: |
+    username=john
+    password=1qaz2wsx

@@ -1,0 +1,10 @@
+apiVersion: "linkedconfig.pbuilder.io/v1alpha1"
+kind: CustomConfigMap
+metadata:
+ name: testenvconf
+ namespace: default
+spec:
+  configMapName: envconfigtest
+  data:
+    username: john
+    password: 1qaz2wsx

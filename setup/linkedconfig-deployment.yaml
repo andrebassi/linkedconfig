@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: linkedconfig
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      linkedconfig: linkedconfig
+  template:
+    metadata:
+      labels:
+        linkedconfig: linkedconfig
+        app: linkedconfig
+    spec:
+      containers:
+      - image: andrebassi/linkedconfig:latest
+        imagePullPolicy: IfNotPresent
+        name: linkedconfig
+      serviceAccountName: linkedconfig-service-account
