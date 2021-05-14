@@ -17,6 +17,7 @@ import (
 	informers "github.com/andrebassi/linkedconfig/pkg/client/informers/externalversions/configuratorcontroller/v1alpha1"
 	listers "github.com/andrebassi/linkedconfig/pkg/client/listers/configuratorcontroller/v1alpha1"
 	"github.com/andrebassi/linkedconfig/watcher"
+	
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

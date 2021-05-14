@@ -1,7 +1,7 @@
 apiVersion: "linkedconfig.pbuilder.io/v1alpha1"
 kind: CustomConfigMap
 metadata:
- name: configtest
+ name: testconfig
  namespace: default
 spec:
   configMapName: testconfig
